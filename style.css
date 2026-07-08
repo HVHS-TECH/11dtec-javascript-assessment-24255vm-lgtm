@@ -41,7 +41,8 @@ width: 100%;
 height: 100%;
 border: 1px solid black;
 object-fit: fill;
-padding: 20px;
+margin: auto;
+display: block;
 }
 
 .container {
