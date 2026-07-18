@@ -5,7 +5,6 @@
     margin: 0;
     top: 7%;
     left: 50%;
-    transform: translate(-50%, -50%);
     border-radius: 100px;
     padding-left: 10px;
     padding-right: 10px;
@@ -25,7 +24,6 @@ font-family: Arial, Helvetica, sans-serif;
   font-weight: bold;
   top: 20%;
   left: 50%;
-  transform: translate(-50%, -50%);
   border-radius: 100px;
   background-color: #fff3b0;
 }
