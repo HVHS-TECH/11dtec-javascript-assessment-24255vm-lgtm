@@ -122,10 +122,9 @@ if (receipt) {
         `;
 
     });
-    
+
 window.location.href = "receipt.html";
   }
-}
 
 localStorage.removeItem("cart");
 localStorage.removeItem("customerName");
@@ -133,3 +132,4 @@ localStorage.removeItem("moneyPaid");
 localStorage.removeItem("change");
 localStorage.removeItem("total");
 
+}
