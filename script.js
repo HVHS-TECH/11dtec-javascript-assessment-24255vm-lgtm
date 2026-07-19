@@ -10,6 +10,6 @@ function addToCart(name, price) {
   
     });
 
- console.log(cart);
- 
+document.getElementById("cart").innerHTML = outputCart();
+
 }
