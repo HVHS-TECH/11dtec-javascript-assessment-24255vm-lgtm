@@ -90,8 +90,7 @@ function checkout() {
   localStorage.setItem("change", change);
   localStorage.setItem("total", total);
 
-
-  }
+  window.location.href = "receipt.html";
   
 
 
