@@ -24,7 +24,7 @@ const totaldiv = document.getElementById("carttotal");
 
 var total = 0;
 
-if (cartdiv) {
+if (cartdiv && totaldiv) {
 
 cart.forEach(item => {
 
