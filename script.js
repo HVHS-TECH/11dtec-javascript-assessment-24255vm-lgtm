@@ -9,6 +9,15 @@ const menuItems = [
     "Mocha Guppy"
 ]
 
+const images = [
+    "guppy special.png",
+    "darkguppy.png",
+    "gupster.png",
+    "green guppy.png",
+    "vanilla guppy.png",
+    "mocha.png"
+];
+
 
 let price = "$10";
 
