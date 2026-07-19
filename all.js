@@ -60,6 +60,7 @@ function checkout() {
 
   if (name === "") {
     alert("Please enter your name before checking out.");
+    alert("!\nYour total is $" + total + "!");
     return;
   }
 
