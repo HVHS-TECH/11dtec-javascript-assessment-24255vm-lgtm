@@ -19,6 +19,8 @@ alert("added to cart!");
 
 }
 
+const cartdiv = document.getElementById("cartitems");
+
 if (cartdiv) {
 
 cart.forEach(item => {
