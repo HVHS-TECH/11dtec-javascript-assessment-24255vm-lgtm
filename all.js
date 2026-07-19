@@ -51,3 +51,5 @@ function checkout() {
     alert("Please enter your name before checking out.");
     return;
   }
+
+  alert("Thank you for your purchase" + name + !);
