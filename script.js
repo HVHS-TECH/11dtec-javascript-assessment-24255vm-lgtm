@@ -1,6 +1,6 @@
 console.log("Hello world!")
 
-const menuItems = [
+var menuItems = [
     "Guppy Special",
     "Dark Guppy",
     "Gupster",
@@ -8,4 +8,6 @@ const menuItems = [
     "Vanilla Guppy",
     "Mocha Guppy"
 ]
+
+const price= "$10"
 
