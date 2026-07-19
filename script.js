@@ -34,11 +34,8 @@ for (var i = 0; i < menuItems.length; i++) {
                 <button type="button">Submit</button>
             </div>
         </div>
-}
+`;
 
-       
-    <input type="number" id="orders${i}" min="0" value="0">
-    <button type="button">Submit</button>
-    </div>
+}
 
 document.getElementById("menu").innerHTML = output;
