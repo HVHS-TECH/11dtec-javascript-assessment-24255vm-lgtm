@@ -72,11 +72,10 @@ function checkout() {
         return;
     }
 
-    
+  var change = money - total;
 
 
-  alert("Thank you for your purchase, " + name + "!");
-  alert( "!\nYour total is $" + total + "!");
+  alert("Thank you for your purchase, " + name +"!\nYour total is $" + total + change"!");
 
   localStorage.removeItem("cart");
 
