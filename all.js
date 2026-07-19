@@ -12,7 +12,9 @@ function addToCart(name, price, quantityId) {
     
   });
 
-document.getElementById("cart").innerHTML = outputCart();
+localStorage.setItem("cart", JSON.stringify(cart));
+
+alert("added to cart!");
 
 }
 
