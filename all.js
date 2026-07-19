@@ -123,7 +123,7 @@ if (receipt) {
 
     });
 
-window.location.href = "receipt.html";
+
   }
 
 localStorage.removeItem("cart");
