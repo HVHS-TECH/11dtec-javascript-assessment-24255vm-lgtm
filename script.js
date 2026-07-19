@@ -13,8 +13,11 @@ const price = "$10";
 
 const output = "";
 
-for (let i = 0; i < menuItems.length; i++) {
-    output += "<p>" + menuItems[i] + " - " + price + "</p>";
+for (var i = 0; i < menuItems.length; i++) {
+    output += <div class="product">
+             <h3>${menuItems[i]}</h3> 
+             <p>Price: $${price}</p>
+    ;
 }
 
 document.getElementById("menu").innerHTML = output;
