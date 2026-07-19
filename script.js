@@ -1,6 +1,6 @@
 console.log("Hello world!")
 
-var menuItems = [
+const menuItems = [
     "Guppy Special",
     "Dark Guppy",
     "Gupster",
@@ -9,9 +9,9 @@ var menuItems = [
     "Mocha Guppy"
 ]
 
-var price= "$10"
+const price = "$10";
 
-let output = "";
+const output = "";
 
 for (let i = 0; i < menuItems.length; i++) {
     output += "<p>" + menuItems[i] + " - " + price + "</p>";
