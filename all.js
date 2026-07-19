@@ -28,3 +28,8 @@ cartdiv.innerHTML += `<p> ${item.name} x ${item.quantity} - $${item.price * item
 });
 
 }
+
+function clearCart() {
+  localStorage.removeItem("cart");
+  location.reload();
+}
