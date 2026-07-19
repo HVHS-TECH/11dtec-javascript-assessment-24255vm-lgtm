@@ -90,7 +90,6 @@ function checkout() {
   localStorage.setItem("change", change);
   localStorage.setItem("total", total);
 
-  localStorage.removeItem("cart");
+window.location.href = "receipt.html";
 
-  location.reload();
 }
