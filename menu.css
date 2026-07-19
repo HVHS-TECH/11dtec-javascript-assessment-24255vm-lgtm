@@ -52,7 +52,7 @@ display: block;
     "nav nav"
     "mainimg mainimg"
     "footer footer";
-  grid-template-columns: 1fr;
+  grid-template-columns: 1fr 1fr;
   gap: 3px;
   padding: 5px;
 }
