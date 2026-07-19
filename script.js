@@ -9,7 +9,7 @@ const menuItems = [
     "Mocha Guppy"
 ]
 
-const price = "$10";
+let price = "$10";
 
 const output = "";
 
