@@ -55,11 +55,20 @@ function checkout() {
 
 
   const name= document.getElementById("customerName").value;
+  const money = Number(document.getElementById("customerMoney").value);
+
 
   if (name === "") {
-    alert("Please enter your name before checking out." + "!");
+    alert("Please enter your name!");
     return;
   }
+
+  if (money < total) {
+    alert("You do not have enough money to complete the purchase!");
+    return;
+  }
+
+
 
   alert("Thank you for your purchase, " + name + "!");
   alert( "!\nYour total is $" + total + "!");
