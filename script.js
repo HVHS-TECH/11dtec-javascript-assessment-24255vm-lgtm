@@ -13,6 +13,8 @@ const menuItems = [
 let price = "$10";
 const output = "";
 
+
+
 for (var i = 0; i < menuItems.length; i++) {
     output += `<div class="product">
 
