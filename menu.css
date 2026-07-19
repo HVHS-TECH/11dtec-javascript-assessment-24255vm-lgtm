@@ -93,6 +93,16 @@ margin-right: auto;
 display: block;
 }
 
+.product {
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+  margin: 0;
+  border-radius: 100px;
+  background-color: #ffe44b;
+  padding: 20px;
+}
+
 
 .container {
   display: grid;
