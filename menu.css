@@ -103,6 +103,15 @@ display: block;
   padding: 20px;
 }
 
+.orderControls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+
 
 .container {
   display: grid;
