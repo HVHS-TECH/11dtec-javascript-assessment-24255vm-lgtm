@@ -35,7 +35,6 @@ for (var i = 0; i < menuItems.length; i++) {
             </div>
         </div>
 `;
-
 }
 
 document.getElementById("menu").innerHTML = output;
