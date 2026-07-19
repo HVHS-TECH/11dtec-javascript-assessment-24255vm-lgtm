@@ -63,6 +63,35 @@ margin-right: auto;
 display: block;
 }
 
+.green guppy{
+  grid-area: ggreen guppy;
+  width: 100%;
+  height: 100%;
+border: 2px solid black;
+margin-left: auto;
+margin-right: auto;
+display: block;
+}
+
+.vanilla guppy{
+  grid-area: vanilla guppy;
+  width: 100%;
+  height: 100%;
+border: 2px solid black;
+margin-left: auto;
+margin-right: auto;
+display: block;
+}
+
+.mocha guppy{
+  grid-area: mocha guppy;
+  width: 100%;
+  height: 100%;
+border: 2px solid black;
+margin-left: auto;
+margin-right: auto;
+display: block;
+}
 
 
 .container {
@@ -71,7 +100,7 @@ display: block;
     "header header header"
     "nav nav nav"
     "mainimg darkguppy gupster"
-    
+    "green guppy vanilla guppy mocha guppy"
     "footer footer footer";
   grid-template-columns: 1fr 1fr 1fr;
   gap: 3px;
