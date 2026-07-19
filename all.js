@@ -75,7 +75,7 @@ function checkout() {
   var change = money - total;
 
 
-  alert("Thank you for your purchase, " + name +"!\nYour total is $" + total + change"!");
+  alert("Thank you for your purchase, " + name +"!\nYour total is $" + total + change + "!");
 
   localStorage.removeItem("cart");
 
