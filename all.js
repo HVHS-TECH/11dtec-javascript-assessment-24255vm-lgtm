@@ -91,7 +91,6 @@ function checkout() {
   window.location.href = "receipt.html";
 
 
-
   const receipt = document.getElementById("receipt");
 
 if (receipt) {
