@@ -76,7 +76,11 @@ function checkout() {
 
 
 
-  alert("Thank you for your purchase, " + name +"!\nYour total is $" + total + change + "!");
+  alert(
+    "Thank you for your purchase, " + name +
+    "!\nYour total is $" + total +
+    "\nYour change is $" + change
+);
 
   localStorage.setItem("customerName", name);
   localStorage.setItem("moneyPaid", money);
