@@ -52,9 +52,9 @@ function checkout() {
     return;
   }
 
-  alert("Thank you for your purchase" + name + !);
+  alert("Thank you for your purchase, " + name + "!");
 
   localStorage.removeItem("cart");
-  
+
   location.reload();
 }
