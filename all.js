@@ -53,3 +53,8 @@ function checkout() {
   }
 
   alert("Thank you for your purchase" + name + !);
+
+  localStorage.removeItem("cart");
+  
+  location.reload();
+}
