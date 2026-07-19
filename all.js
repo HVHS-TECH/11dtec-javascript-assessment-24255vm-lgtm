@@ -1,6 +1,6 @@
 console.log("Hello world!")
 
-var cart = [];
+var cart = JSON.parse(localStorage.getItem("cart")) || [];
 
 function addToCart(name, price, quantityId) {
   const quantity = parseInt(document.getElementById(quantityId).value);
@@ -15,7 +15,3 @@ function addToCart(name, price, quantityId) {
 document.getElementById("cart").innerHTML = outputCart();
 
 }
-
-var cart = JSON.parse(localStorage.getItem("cart")) || [];
-
-function addToCart(name, price, quantityId) {
