@@ -27,7 +27,7 @@ for (var i = 0; i < menuItems.length; i++) {
             <input
                 type="number"
                 id="orders${i}"
-                min="-10"
+                min="0"
                 value="0"
                 max="10"
                 >
