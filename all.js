@@ -72,6 +72,8 @@ function checkout() {
         return;
     }
 
+     var change = money - total;
+
         if (money > total) {
         alert(
             "you're too rich!\n" +
@@ -81,7 +83,6 @@ function checkout() {
         return;
     }
 
-  var change = money - total;
 
 
   alert("Thank you for your purchase, " + name +"!\nYour total is $" + total + change + "!");
