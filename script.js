@@ -11,6 +11,10 @@ var menuItems = [
 
 var price= "$10"
 
+let output = "";
 
+for (let i = 0; i < menuItems.length; i++) {
+    output += "<p>" + menuItems[i] + " - " + price + "</p>";
+}
 
 document.getElementById("menu").innerHTML = output;
