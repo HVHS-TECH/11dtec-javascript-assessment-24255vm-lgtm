@@ -16,7 +16,10 @@ const output = "";
 
 
 for (var i = 0; i < menuItems.length; i++) {
-    output += `<div class="product">
+    output += 
+    
+    `<div class="product">
+     <p>Price: ${price}</p>
 
             <label for="orders${i}">How many would you like?</label>
 
