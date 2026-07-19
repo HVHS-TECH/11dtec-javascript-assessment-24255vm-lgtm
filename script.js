@@ -9,15 +9,6 @@ const menuItems = [
     "Mocha Guppy"
 ]
 
-const images = [
-    "guppy special.png",
-    "darkguppy.png",
-    "gupster.png",
-    "green guppy.png",
-    "vanilla guppy.png",
-    "mocha.png"
-];
-
 
 let price = "$10";
 
@@ -25,9 +16,7 @@ var output = "";
 
 for (let i = 0; i < menuItems.length; i++) {
     output += `
-         <div class="product">
-            <img src="${images[i]}" alt="${menuItems[i]}" style="width:80%;">
-            
+        <div class="product">
             <h3>${menuItems[i]}</h3>
             <p>Price: ${price}</p>
 
