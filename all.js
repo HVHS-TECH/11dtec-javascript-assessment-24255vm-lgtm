@@ -2,15 +2,15 @@ console.log("Hello world!")
 
 var cart = JSON.parse(localStorage.getItem("cart")) || [];
 
-function addToCart(name, price, quantityId) {
+function addToCart(name, price, quantityId, image) {
 
   const quantity = parseInt(document.getElementById(quantityId).value);
 
   cart.push({
     name: name,
     price: price,
-    quantity: quantity
-    
+    quantity: quantity,
+    image: image
   });
 
 localStorage.setItem("cart", JSON.stringify(cart));
