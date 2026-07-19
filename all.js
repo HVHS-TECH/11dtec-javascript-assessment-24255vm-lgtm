@@ -48,9 +48,6 @@ cartdiv.innerHTML += `
 
 
 
-
-}
-
 function clearCart() {
   localStorage.removeItem("cart");
   location.reload();
