@@ -89,9 +89,8 @@ function checkout() {
   localStorage.setItem("moneyPaid", money);
   localStorage.setItem("change", change);
   localStorage.setItem("total", total);
-const receipt = document.getElementById("receipt");
 
-window.location.href = "receipt.html";
+  window.location.href = "receipt.html";
 
 if (receipt) {
 
