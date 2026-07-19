@@ -15,3 +15,7 @@ function addToCart(name, price, quantityId) {
 document.getElementById("cart").innerHTML = outputCart();
 
 }
+
+var cart = [];
+
+function addToCart(name, price, quantityId) {
