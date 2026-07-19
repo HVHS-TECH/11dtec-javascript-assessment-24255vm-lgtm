@@ -15,3 +15,7 @@ function addToCart(name, price, quantityId) {
 document.getElementById("cart").innerHTML = outputCart();
 
 }
+
+const cartdiv=document.getElementById("cartitems");
+
+cartdiv.innerHTML += `<p> ${item.name} x ${quantity} - $${(item.price * item.quantity)}</p>` 
