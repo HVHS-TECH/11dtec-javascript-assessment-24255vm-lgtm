@@ -127,3 +127,9 @@ if (receipt) {
 
   }
 }
+
+localStorage.removeItem("cart");
+localStorage.removeItem("customerName");
+localStorage.removeItem("moneyPaid");
+localStorage.removeItem("change");
+localStorage.removeItem("total");
