@@ -55,13 +55,24 @@ margin-right: auto;
 display: block;
 }
 
+.gupster img {
+  grid-area: gupster;
+  width: 100%;
+  height: 100%;
+border: 2px solid black;
+margin-left: auto;
+margin-right: auto;
+display: block;
+}
+
+
 
 .container {
   display: grid;
   grid-template-areas:
     "header header header"
     "nav nav nav"
-    "mainimg darkguppy darkguppy"
+    "mainimg darkguppy gupster"
     "footer footer footer";
   grid-template-columns: 1fr 1fr 1fr;
   gap: 3px;
