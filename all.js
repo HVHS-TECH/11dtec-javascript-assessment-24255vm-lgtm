@@ -83,7 +83,7 @@ function checkout() {
 );
 
   localStorage.setItem("customerName", name);
-  localStorage.setItem("moneyPaid", money);
+  localStorage.setItem("customerMoney", money);
   localStorage.setItem("change", change);
   localStorage.setItem("total", total);
 
@@ -96,8 +96,8 @@ function checkout() {
 
 if (receipt) {
 
-  const name=localStorage.getItem("customerName");
-  const money = localStorage.getItem("moneyPaid");
+  const name= localStorage.getItem("customerName");
+  const money = localStorage.getItem("customerMoney");
   const change = localStorage.getItem("change");
   const total = localStorage.getItem("total");
 
