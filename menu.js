@@ -16,6 +16,6 @@ document.getElementById("cart").innerHTML = outputCart();
 
 }
 
-var cart = [];
+var cart = JSON.parse(localStorage.getItem("cart")) [];
 
 function addToCart(name, price, quantityId) {
