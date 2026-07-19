@@ -11,7 +11,6 @@ const menuItems = [
 
 
 let price = "$10";
-
 const output = "";
 
 for (var i = 0; i < menuItems.length; i++) {
@@ -19,6 +18,7 @@ for (var i = 0; i < menuItems.length; i++) {
 
             <label for="orders${i}">How many would you like?</label>
 
+             <div class="orderControls">
             <input
                 type="number"
                 id="orders${i}"
@@ -30,7 +30,7 @@ for (var i = 0; i < menuItems.length; i++) {
             `;
 }
 
-        <div class="orderControls">
+       
     <input type="number" id="orders${i}" min="0" value="0">
     <button type="button">Submit</button>
     </div>
