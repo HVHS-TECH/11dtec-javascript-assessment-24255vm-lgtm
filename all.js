@@ -101,5 +101,29 @@ if (receipt) {
   const change = localStorage.getItem("change");
   const total = localStorage.getItem("total");
 
+ receipt.innerHTML = `
+        <h2>Thank you for your purchase!</h2>
 
+        <p>Name: ${name}</p>
+
+        <p>Total: $${total}</p>
+
+        <p>Money Paid: $${money}</p>
+
+        <p>Change: $${change}</p>
+
+        <h3>Items Purchased:</h3>
+    `;
+    cart.forEach(item => {
+
+        receipt.innerHTML += `
+            <p>
+                ${item.name} x ${item.quantity}
+                - $${item.price * item.quantity}
+            </p>
+        `;
+
+    });
+
+  }
 }
