@@ -1,6 +1,6 @@
 console.log("Hello world!")
 
-var menuItems = [
+const menuItems = [
     "Guppy Special",
     "Dark Guppy",
     "Gupster",
