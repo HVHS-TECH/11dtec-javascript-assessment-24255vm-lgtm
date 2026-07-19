@@ -35,7 +35,7 @@ a {
   text-decoration: none;
 }
 
-.mainimg img {
+.mainimg{
   grid-area: mainimg;
   width: 100%;
   height: 100%;
@@ -45,7 +45,7 @@ margin-right: auto;
 display: block;
 }
 
-.darkguppy img {
+.darkguppy{
   grid-area: darkguppy;
   width: 100%;
   height: 100%;
@@ -55,7 +55,7 @@ margin-right: auto;
 display: block;
 }
 
-.gupster img {
+.gupster{
   grid-area: gupster;
   width: 100%;
   height: 100%;
