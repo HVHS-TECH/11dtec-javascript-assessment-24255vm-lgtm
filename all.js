@@ -72,6 +72,15 @@ function checkout() {
         return;
     }
 
+        if (money > total) {
+        alert(
+            "you're too rich!\n" +
+            "Your total is $" + total +
+            "\nYou entered $" + money + "\nYou have $" + change + " in change."
+        );
+        return;
+    }
+
   var change = money - total;
 
 
