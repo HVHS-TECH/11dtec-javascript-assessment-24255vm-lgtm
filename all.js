@@ -24,7 +24,14 @@ const cartdiv = document.getElementById("cartitems");
 if (cartdiv) {
 
 cart.forEach(item => {
-cartdiv.innerHTML += `<p>  ${item.name} x ${item.quantity} - $${item.price * item.quantity}</p>`;
+
+cartdiv.innerHTML += `
+
+<div class="cart-product">
+
+
+<p> ${item.name} x ${item.quantity} - $${item.price * item.quantity}</p>`;
+
 });
 
 }
