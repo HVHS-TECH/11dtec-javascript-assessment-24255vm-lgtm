@@ -20,10 +20,17 @@ alert("added to cart!");
 }
 
 const cartdiv = document.getElementById("cartitems");
+const cartdiv = document.getElementById("carttotal");
+
+var total = 0;
 
 if (cartdiv) {
 
 cart.forEach(item => {
+
+   var itemtotal = item.price * item.quantity;
+
+   total += itemTotal;
 
 cartdiv.innerHTML += `
 
