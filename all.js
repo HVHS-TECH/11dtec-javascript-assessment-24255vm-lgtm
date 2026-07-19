@@ -63,12 +63,16 @@ function checkout() {
     return;
   }
 
-  if (money < total) {
-    alert("you're too broke! You need $" + (total - money) + " more to complete the purchase.");
+    if (money < total) {
+        alert(
+            "you're too broke!\n" +
+            "Your total is $" + total +
+            "\nYou entered $" + money
+        );
+        return;
+    }
 
-    return;
-  }
-
+    
 
 
   alert("Thank you for your purchase, " + name + "!");
