@@ -26,6 +26,9 @@ var output = "";
 for (let i = 0; i < menuItems.length; i++) {
     output += `
         <div class="product">
+         <div class="product">
+            <img src="${images[i]}" alt="${menuItems[i]}" style="width:80%;">
+            
             <h3>${menuItems[i]}</h3>
             <p>Price: ${price}</p>
 
