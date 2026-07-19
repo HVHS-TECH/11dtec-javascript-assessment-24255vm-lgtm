@@ -11,3 +11,4 @@ const menuItems = [
 
 const price= "$10"
 
+var output = document.getElementById("menu.html")
