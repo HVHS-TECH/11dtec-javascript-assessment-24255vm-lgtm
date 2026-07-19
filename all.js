@@ -18,4 +18,6 @@ document.getElementById("cart").innerHTML = outputCart();
 
 const cartdiv=document.getElementById("cartitems");
 
-cartdiv.innerHTML += `<p> ${item.name} x ${quantity} - $${(item.price * item.quantity)}</p>` 
+cart.forEach(item => {
+cartdiv.innerHTML += `<p> ${item.name} x ${quantity} - $${item.price * item.quantity}</p>`;
+});
