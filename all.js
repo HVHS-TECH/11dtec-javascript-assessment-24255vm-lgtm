@@ -74,14 +74,7 @@ function checkout() {
 
      const change = money - total;
 
-        if (money > total) {
-        alert(
-            "you're too rich!\n" +
-            "Your total is $" + total +
-            "\nYou entered $" + money + "\nYou have $" + change + " in change."
-        );
-        return;
-    }
+
 
   alert("Thank you for your purchase, " + name +"!\nYour total is $" + total + change + "!");
 
@@ -127,7 +120,7 @@ if (receipt) {
         `;
 
     });
-    
+
 localStorage.removeItem("cart");
 localStorage.removeItem("customerName");
 localStorage.removeItem("moneyPaid");
