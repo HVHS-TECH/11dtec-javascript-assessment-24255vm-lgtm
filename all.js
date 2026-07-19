@@ -64,7 +64,8 @@ function checkout() {
   }
 
   if (money < total) {
-    alert("You do not have enough money to complete the purchase!");
+    alert("you're too broke! You need $" + (total - money) + " more to complete the purchase.");
+
     return;
   }
 
