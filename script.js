@@ -30,9 +30,10 @@ for (var i = 0; i < menuItems.length; i++) {
                 min="-10"
                 value="0"
                 max="10"
-            >
+                >
+                <button type="button">Submit</button>
+            </div>
         </div>
-            `;
 }
 
        
