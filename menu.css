@@ -71,6 +71,7 @@ display: block;
     "header header header"
     "nav nav nav"
     "mainimg darkguppy gupster"
+    
     "footer footer footer";
   grid-template-columns: 1fr 1fr 1fr;
   gap: 3px;
