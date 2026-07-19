@@ -72,7 +72,7 @@ function checkout() {
         return;
     }
 
-     var change = money - total;
+     const change = money - total;
 
         if (money > total) {
         alert(
@@ -83,9 +83,12 @@ function checkout() {
         return;
     }
 
-
-
   alert("Thank you for your purchase, " + name +"!\nYour total is $" + total + change + "!");
+
+  localStorage.setItem("customerName", name);
+  localStorage.setItem("moneyPaid", money);
+  localStorage.setItem("change", change);
+  localStorage.setItem("total", total);
 
   localStorage.removeItem("cart");
 
