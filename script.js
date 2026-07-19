@@ -11,7 +11,7 @@ const menuItems = [
 
 
 let price = "$10";
-const output = "";
+var output = "";
 
 
 
