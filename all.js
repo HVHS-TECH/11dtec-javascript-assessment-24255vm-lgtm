@@ -93,7 +93,7 @@ function checkout() {
 
   window.location.href = "receipt.html";
 
-  
+
 
   const receipt = document.getElementById("receipt");
 
@@ -127,14 +127,15 @@ if (receipt) {
         `;
 
     });
-
-
-  }
-
+    
 localStorage.removeItem("cart");
 localStorage.removeItem("customerName");
 localStorage.removeItem("moneyPaid");
 localStorage.removeItem("change");
 localStorage.removeItem("total");
+
+  }
+
+
 
 }
