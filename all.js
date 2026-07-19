@@ -41,3 +41,13 @@ function clearCart() {
   localStorage.removeItem("cart");
   location.reload();
 }
+
+function checkout() { 
+
+
+  const name= document.getElementById("customerName").value;
+
+  if (name === "") {
+    alert("Please enter your name before checking out.");
+    return;
+  }
