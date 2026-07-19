@@ -50,9 +50,9 @@ display: block;
   grid-template-areas:
     "header header"
     "nav nav"
-    "mainimg mainimg"
+    "mainimg mainimg mainimg"
     "footer footer";
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
   gap: 3px;
   padding: 5px;
 }
