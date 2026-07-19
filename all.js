@@ -28,7 +28,8 @@ cart.forEach(item => {
 cartdiv.innerHTML += `
 
 <div class="cart-product">
-
+<img src="${item.image}" alt="${item.name}" 
+style="width: 50%; height: 50%;">
 
 <p> ${item.name} x ${item.quantity} - $${item.price * item.quantity}</p>`;
 
