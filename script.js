@@ -17,8 +17,6 @@ const output = "";
 for (var i = 0; i < menuItems.length; i++) {
     output += `<div class="product">
 
-            <h3>${menuItems[i]}</h3>
-
             <button class="priceBtn">$10.00</button>
 
             <label for="orders${i}">How many would you like?</label>
