@@ -92,4 +92,14 @@ function checkout() {
 
 window.location.href = "receipt.html";
 
+const receipt = document.getElementById("receipt");
+
+if (receipt) {
+
+  const name=localStorage.getItem("customerName");
+  const money = localStorage.getItem("moneyPaid");
+  const change = localStorage.getItem("change");
+  const total = localStorage.getItem("total");
+
+
 }
