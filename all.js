@@ -36,7 +36,7 @@ cartdiv.innerHTML += `
 
 <div class="cart-product"><img src="${item.image}" alt="${item.name}" style="width: 50%; height: 50%;">
 
-<p> ${item.name} x ${item.quantity} - $${itemtotal}</p>`;
+<p> ${item.name} x ${item.quantity} - $${itemtotal}</p></div>`;
 
 });
 
@@ -57,11 +57,12 @@ function checkout() {
   const name= document.getElementById("customerName").value;
 
   if (name === "") {
-    alert("Please enter your name before checking out." + "!\nYour total is $" + total + "!");
+    alert("Please enter your name before checking out." + "!");
     return;
   }
 
   alert("Thank you for your purchase, " + name + "!");
+  alert( "!\nYour total is $" + total + "!");
 
   localStorage.removeItem("cart");
 
