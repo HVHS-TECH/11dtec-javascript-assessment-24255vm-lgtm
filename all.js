@@ -92,6 +92,8 @@ function checkout() {
 window.location.href = "receipt.html";
 const receipt = document.getElementById("receipt");
 
+window.location.href = "receipt.html";
+
 if (receipt) {
 
   const name=localStorage.getItem("customerName");
