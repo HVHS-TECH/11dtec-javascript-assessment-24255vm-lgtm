@@ -19,7 +19,7 @@ alert("added to cart!");
 
 }
 
-if (cartdiv) {
+if (cart) {
 
 cart.forEach(item => {
 cartdiv.innerHTML += `<p> ${item.name} x ${item.quantity} - $${item.price * item.quantity}</p>`;
