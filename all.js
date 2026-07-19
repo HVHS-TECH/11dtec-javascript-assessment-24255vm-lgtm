@@ -22,7 +22,7 @@ alert("added to cart!");
 if (cartdiv) {
 
 cart.forEach(item => {
-cartdiv.innerHTML += `<p> ${item.name} x ${quantity} - $${item.price * item.quantity}</p>`;
+cartdiv.innerHTML += `<p> ${item.name} x ${item.quantity} - $${item.price * item.quantity}</p>`;
 });
 
 }
