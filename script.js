@@ -2,10 +2,14 @@ console.log("Hello world!")
 
 var cart = [];
 
-function addToCart(item) {
+function addToCart(name, price) {
   cart.push({
-    name: item
+    name: name,
     price: price
+
+  
     });
 
+ console.log(cart);
+ 
 }
