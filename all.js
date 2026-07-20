@@ -1,4 +1,6 @@
-console.log("Hello world!")
+console.log("Hello wold!")
+
+//cart code//
 
 var cart = JSON.parse(localStorage.getItem("cart")) || [];
 
@@ -13,6 +15,7 @@ function addToCart(name, price, quantityId, image) {
     image: image
   });
 
+  
 localStorage.setItem("cart", JSON.stringify(cart));
 
 alert("added to cart!");
@@ -50,6 +53,8 @@ function clearCart() {
   localStorage.removeItem("cart");
   location.reload();
 }
+
+//final checkout//
 
 function checkout() { 
 
@@ -91,6 +96,8 @@ function checkout() {
 
 }
 
+//receipt begening///
+
   const receipt = document.getElementById("receipt");
 
 
@@ -131,4 +138,5 @@ localStorage.removeItem("customerName");
 localStorage.removeItem("customerMoney");
 localStorage.removeItem("change");
 localStorage.removeItem("total");
-  }
+
+}
