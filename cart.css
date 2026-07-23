@@ -1,6 +1,6 @@
 .header {
     grid-area: header;
-    color:black;
+    color:orange;
     text-align: center;
     font-size: 80px;
     margin: 0;
