@@ -45,6 +45,10 @@ margin-right: auto;
 display: block;
 }
 
+.footer {
+    grid-area: footer;
+}
+
 .container{
   display: grid;
   grid-template-areas:
