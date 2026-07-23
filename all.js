@@ -15,9 +15,15 @@ function addToCart(name, price, quantityId, image) {
 
     quantity = Number(quantity);
 
-  }
+cart.push({
+        name: name,
+        price: price,
+        quantity: quantity,
+        image: image
 
-{
+})
+
+
   
 localStorage.setItem("cart", JSON.stringify(cart));
 
