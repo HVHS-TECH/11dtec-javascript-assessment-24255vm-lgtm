@@ -42,7 +42,7 @@ a {
   border: 2px solid black;
 }
 
-#cart {
+.cart {
     grid-area: mainimg;
     width: 100%;
     border: 2px solid black;
