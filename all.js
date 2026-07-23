@@ -98,7 +98,7 @@ function checkout() {
 
 }
 
-//receipt begening///
+//receipt beggening///
 
   const receipt = document.getElementById("receipt");
 
