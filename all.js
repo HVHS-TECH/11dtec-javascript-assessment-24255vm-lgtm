@@ -68,6 +68,7 @@ function checkout() {
     return;
   }
 
+  
     if (money < total) {
         alert(
             "you're too broke!\n" +
