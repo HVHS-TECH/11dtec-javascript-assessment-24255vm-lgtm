@@ -29,9 +29,10 @@ var total = 0;
 
 if (cartdiv && totaldiv) {
 
-cart.forEach(item => {
+for (let i = 0; i < cart.length; i++) {
 
-   var itemtotal = item.price * item.quantity;
+  let item = cart[i];
+  let itemtotal = item.price * item.quantity;
 
    total += itemtotal;
 
