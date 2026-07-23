@@ -34,6 +34,14 @@ function checkQuantity(input) {
     }
 }
 
+function checkQuantity(input) {
+    if (input.value > 50) {
+        alert("we only have 50 of these in stock please order 50 or less!");
+        input.value = 50;
+    }
+}
+
+
 if (cartdiv && totaldiv) {
 
 for (let i = 0; i < cart.length; i++) {
