@@ -27,6 +27,12 @@ const totaldiv = document.getElementById("carttotal");
 
 var total = 0;
 
+function checkQuantity(input) {
+    if (input.value > 50) {
+        alert("You can only order up to 50 of one item.");
+        input.value = 50;
+    }
+}
 
 function blockInvalidKeys(event) {
    if (
