@@ -2,6 +2,20 @@ console.log("Hello wold!")
 
 //cart code//
 
+
+function addToCart(name, price, quantityId, image) {
+
+    let quantity = document.getElementById(quantityId).value;
+
+    if (quantity === "" || Number(quantity) === 0) {
+        alert("Please enter a quantity before adding to the cart.");
+        return;
+    }
+
+    quantity = Number(quantity);
+
+  }
+
 var cart = JSON.parse(localStorage.getItem("cart")) || [];
 
 function addToCart(name, price, quantityId, image) {
