@@ -62,9 +62,10 @@ function blockInvalidKeys1(event1) {
 
 function lettersOnly(input) {
     input.value = input.value.replace(/[^a-zA-Z ]/g, "");
-    alert("Please enter a valid name.(no symbols or numbers)")
 }
-
+           {
+alert("Please enter a valid name.(no symbols or numbers)")
+}
 
 if (cartdiv && totaldiv) {
 
