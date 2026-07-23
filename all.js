@@ -44,7 +44,8 @@ function checkQuantity(input) {
 function blockInvalidKeys(event) {
    if (
         event.key === "e" ||
-        event.key === "E" || ) {
+        event.key === "E"
+       ) {
         event.preventDefault();
         return false;
     }
