@@ -42,7 +42,7 @@ cartdiv.innerHTML += `
 
 <p> ${item.name} x ${item.quantity} - $${itemtotal}</p></div>`;
 
-});
+};
 
 
  totaldiv.innerHTML = "Total: $" + total;
@@ -124,7 +124,10 @@ if (receipt) {
 
         <h3>Items Purchased:</h3>
     `;
-    cart.forEach(item => {
+
+    for (let i = 0; i < cart.length; i++) {
+
+        let item = cart[i];
 
         receipt.innerHTML += `
             <p>
@@ -133,7 +136,7 @@ if (receipt) {
             </p>
         `;
 
-    });
+    };
 
 localStorage.removeItem("cart");
 localStorage.removeItem("customerName");
