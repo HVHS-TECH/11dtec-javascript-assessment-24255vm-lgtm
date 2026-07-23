@@ -60,6 +60,10 @@ function blockInvalidKeys1(event1) {
     }
   }
 
+function lettersOnly(input) {
+    input.value = input.value.replace(/[^a-zA-Z ]/g, "");
+}
+
 
 if (cartdiv && totaldiv) {
 
