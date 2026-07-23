@@ -54,6 +54,13 @@ a {
     border-radius: 20px;
 }
 
+.carttotal {
+    text-align: center;
+    padding: 20px;
+    background-color: #fff3b0;
+    border-radius: 20px;
+}
+
 .footer {
     grid-area: footer;
     text-align: center;
