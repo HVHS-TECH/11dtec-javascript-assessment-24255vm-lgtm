@@ -47,7 +47,7 @@ function blockInvalidKeys(event) {
     }
   }
 
-function blockInvalidKeys1(event1) {
+function blockInvalidKeys1(event) {
    if (
         event.key === "e" ||
         event.key === "E" ||
