@@ -38,11 +38,8 @@ a {
 .mainimg img {
   grid-area: mainimg;
   width: 100%;
-  height: 100%;
-border: 2px solid black;
-margin-left: auto;
-margin-right: auto;
-display: block;
+  height: auto;
+  border: 2px solid black;
 }
 
 .mainimg{
