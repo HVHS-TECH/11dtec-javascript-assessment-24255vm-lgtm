@@ -35,9 +35,9 @@ function checkQuantity(input) {
 }
 
 function checkQuantity(input) {
-    if (input.value > 50) {
-        alert("we only have 50 of these in stock please order 50 or less!");
-        input.value = 50;
+    if (input.value < 0) {
+        alert("please enter a valid number!");
+        input.value = 0;
     }
 }
 
