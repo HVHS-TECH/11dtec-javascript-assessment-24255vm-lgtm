@@ -47,6 +47,19 @@ function blockInvalidKeys(event) {
     }
   }
 
+function blockInvalidKeys1(event1) {
+   if (
+        event.key === "e" ||
+        event.key === "E" ||
+        event.key === "+" ||
+        event.key === "-"
+    ) {
+        alert("Please enter a valid number!");
+        event.preventDefault();
+        return false;
+    }
+  }
+
 
 if (cartdiv && totaldiv) {
 
