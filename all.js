@@ -54,7 +54,7 @@ function clearCart() {
   location.reload();
 }
 
-//final checkout//
+//final checkout///
 
 function checkout() { 
 
