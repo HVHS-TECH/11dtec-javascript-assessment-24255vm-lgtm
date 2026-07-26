@@ -6,14 +6,23 @@ var cart = JSON.parse(localStorage.getItem("cart")) || [];
 
 function addToCart(name, price, quantityId, image) {
 
-  const quantity = parseInt(document.getElementById(quantityId).value);
+    let quantity = document.getElementById(quantityId).value;
 
-  cart.push({
-    name: name,
-    price: price,
-    quantity: quantity,
-    image: image
-  });
+    if (quantity === "" || Number(quantity) === 0) {
+        alert("Please enter a quantity before adding to the cart.");
+        return;
+    }
+
+    quantity = Number(quantity);
+
+cart.push({
+        name: name,
+        price: price,
+        quantity: quantity,
+        image: image
+
+})
+
 
   
 localStorage.setItem("cart", JSON.stringify(cart));
@@ -27,11 +36,54 @@ const totaldiv = document.getElementById("carttotal");
 
 var total = 0;
 
+function checkQuantity(input) {
+    if (input.value > 50) {
+        alert("You can only order up to 50 of one item.");
+        input.value = 50;
+    }
+}
+
+function blockInvalidKeys(event) {
+   if (
+        event.key === "e" ||
+        event.key === "E" ||
+        event.key === "+" ||
+        event.key === "-"
+    ) {
+        alert("Please enter a whole number between 0 and 50.");
+        event.preventDefault();
+        return false;
+    }
+  }
+
+function blockInvalidKeys1(event) {
+   if (
+        event.key === "e" ||
+        event.key === "E" ||
+        event.key === "+" ||
+        event.key === "-"
+    ) {
+        alert("Please enter a valid number!");
+        event.preventDefault();
+        return false;
+    }
+  }
+
+function lettersOnly(input) {
+    let original = input.value;
+
+    input.value = input.value.replace(/[^a-zA-Z ]/g, "");
+
+    if (original !== input.value) {
+        alert("Please enter a valid name. (No symbols or numbers.)");
+    }
+}
 if (cartdiv && totaldiv) {
 
-cart.forEach(item => {
+for (let i = 0; i < cart.length; i++) {
 
-   var itemtotal = item.price * item.quantity;
+  let item = cart[i];
+  let itemtotal = item.price * item.quantity;
 
    total += itemtotal;
 
@@ -41,7 +93,7 @@ cartdiv.innerHTML += `
 
 <p> ${item.name} x ${item.quantity} - $${itemtotal}</p></div>`;
 
-});
+};
 
 
  totaldiv.innerHTML = "Total: $" + total;
@@ -97,7 +149,7 @@ function checkout() {
 
 }
 
-//receipt begening///
+//receipt beggening///
 
   const receipt = document.getElementById("receipt");
 
@@ -123,7 +175,10 @@ if (receipt) {
 
         <h3>Items Purchased:</h3>
     `;
-    cart.forEach(item => {
+
+    for (let i = 0; i < cart.length; i++) {
+
+        let item = cart[i];
 
         receipt.innerHTML += `
             <p>
@@ -132,7 +187,7 @@ if (receipt) {
             </p>
         `;
 
-    });
+    };
 
 localStorage.removeItem("cart");
 localStorage.removeItem("customerName");
